@@ -1,0 +1,405 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://tabuleiro-melhor-removebg-preview.png" type="Texture2D" id=1]
+[ext_resource path="res://bolinha.png" type="Texture2D" id=2]
+[ext_resource path="res://new_script.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 31.0
+height = 40.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 46.0
+height = 128.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 55.0
+height = 102.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Board" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Board"]
+position = Vector2( 514, 181 )
+scale = Vector2( 1.488, 0.971 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="Board/Sprite2D"]
+offset_right = 40.0
+offset_bottom = 14.0
+
+[node name="Hole1" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole1"]
+position = Vector2( 220, 261 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole1"]
+position = Vector2( 312, 269 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole1"]
+position = Vector2( 294, 280 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole1"]
+position = Vector2( 306, 299 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole1"]
+position = Vector2( 305, 249 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole2" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole2"]
+position = Vector2( 335, 261 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole2"]
+position = Vector2( 428, 269 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole2"]
+position = Vector2( 410, 280 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole2"]
+position = Vector2( 422, 299 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole2"]
+position = Vector2( 421, 249 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole3" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole3"]
+position = Vector2( 450, 260 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole3"]
+position = Vector2( 543, 268 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole3"]
+position = Vector2( 525, 279 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole3"]
+position = Vector2( 537, 298 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole3"]
+position = Vector2( 536, 248 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole4" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole4"]
+position = Vector2( 568, 261 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole4"]
+position = Vector2( 660, 267 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole4"]
+position = Vector2( 642, 278 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole4"]
+position = Vector2( 654, 297 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole4"]
+position = Vector2( 653, 247 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole5" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole5"]
+position = Vector2( 682, 259 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole5"]
+position = Vector2( 772, 270 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole5"]
+position = Vector2( 754, 281 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole5"]
+position = Vector2( 766, 300 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole5"]
+position = Vector2( 765, 250 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole6" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole6"]
+position = Vector2( 798, 260 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole6"]
+position = Vector2( 889, 271 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole6"]
+position = Vector2( 871, 282 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole6"]
+position = Vector2( 883, 301 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole6"]
+position = Vector2( 882, 251 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole-maior" type="Area2D" parent="Board"]
+position = Vector2( -4, -7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole-maior"]
+position = Vector2( 919, 192 )
+shape = SubResource( 3 )
+
+[node name="Hole7" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole7"]
+position = Vector2( 798, 110 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole7"]
+position = Vector2( 891, 116 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole7"]
+position = Vector2( 873, 127 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole7"]
+position = Vector2( 885, 146 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole7"]
+position = Vector2( 884, 96 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole8" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole8"]
+position = Vector2( 682, 112 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole8"]
+position = Vector2( 777, 120 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole8"]
+position = Vector2( 759, 131 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole8"]
+position = Vector2( 771, 150 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole8"]
+position = Vector2( 770, 100 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole9" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole9"]
+position = Vector2( 568, 111 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole9"]
+position = Vector2( 661, 118 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole9"]
+position = Vector2( 643, 129 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole9"]
+position = Vector2( 655, 148 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole9"]
+position = Vector2( 654, 98 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole10" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole10"]
+position = Vector2( 453, 113 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole10"]
+position = Vector2( 544, 120 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole10"]
+position = Vector2( 526, 131 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole10"]
+position = Vector2( 538, 150 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole10"]
+position = Vector2( 537, 100 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole11" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole11"]
+position = Vector2( 333, 113 )
+shape = SubResource( 1 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Board/Hole11"]
+position = Vector2( 417, 100 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole11"]
+position = Vector2( 424, 120 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole11"]
+position = Vector2( 406, 131 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole11"]
+position = Vector2( 418, 150 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole12" type="Area2D" parent="Board"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole12"]
+position = Vector2( 218, 113 )
+shape = SubResource( 1 )
+
+[node name="Sprite1" type="Sprite2D" parent="Board/Hole12"]
+position = Vector2( 302, 99 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite2" type="Sprite2D" parent="Board/Hole12"]
+position = Vector2( 309, 119 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite3" type="Sprite2D" parent="Board/Hole12"]
+position = Vector2( 291, 130 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Sprite4" type="Sprite2D" parent="Board/Hole12"]
+position = Vector2( 303, 149 )
+scale = Vector2( 0.0777778, 0.0722222 )
+texture = ExtResource( 2 )
+offset = Vector2( -1080, -180 )
+
+[node name="Hole-maior2" type="Area2D" parent="Board"]
+position = Vector2( -4, -7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/Hole-maior2"]
+position = Vector2( 111, 192 )
+shape = SubResource( 2 )
